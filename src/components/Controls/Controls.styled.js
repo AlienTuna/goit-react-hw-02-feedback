@@ -12,7 +12,7 @@ export const Btn = styled.button`
 padding: 6px 15px;
 font-size: 18px;
 text-transform: capitalize;
-background-color: white;
+background-color: transparent;
 border: solid 1px silver;
 border-radius: 5px;
 &:hover {
