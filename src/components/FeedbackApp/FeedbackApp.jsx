@@ -13,4 +13,10 @@ state = {
     bad: 0
   }
 
+render() {
+    return (
+        <div>rewrewerwer</div>
+    )
+}
+
 }
