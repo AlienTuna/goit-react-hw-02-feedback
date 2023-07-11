@@ -1,6 +1,6 @@
-import { ControlsContainer, ControlsHeader, Btn } from "./Controls.styled";
+import { ControlsContainer, ControlsHeader, Btn } from "./FeedbackOptions.styled";
 
-export function Controls({options, onBtnClick}) {
+export function FeedbackOptions({options, onBtnClick}) {
   return (
     <div>
       <ControlsHeader>Please leave feedback</ControlsHeader>
