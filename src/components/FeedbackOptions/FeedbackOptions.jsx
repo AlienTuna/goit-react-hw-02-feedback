@@ -1,6 +1,7 @@
 import { ControlsContainer, ControlsHeader, Btn } from "./FeedbackOptions.styled";
+import PropTypes from "prop-types";
 
-export function FeedbackOptions({options, onBtnClick}) {
+export function FeedbackOptions({ options, onBtnClick }) {
   return (
     <div>
       <ControlsHeader>Please leave feedback</ControlsHeader>
@@ -13,8 +14,17 @@ export function FeedbackOptions({options, onBtnClick}) {
           >
             {key}
           </Btn>
-      ))}
+        ))}
       </ControlsContainer>
     </div>
   )
+}
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.shape({
+    good: PropTypes.number,
+    neutral: PropTypes.number,
+    bad: PropTypes.number
+  }).isRequired,
+  onBtnClick: PropTypes.func.isRequired
 }

@@ -1,6 +1,8 @@
 import { Stat, Header } from "./Statistics.styled";
 import { Notification } from "components/Notification/Notification";
 
+import PropTypes from "prop-types";
+
 export function Statistics({ rates, total, positive }) {
     return (
         <>
@@ -20,4 +22,14 @@ export function Statistics({ rates, total, positive }) {
             )}
         </>
     )
+}
+
+Statistics.propTypes = {
+    rates: PropTypes.shape({
+            good: PropTypes.number,
+            neutral: PropTypes.number,
+            bad: PropTypes.number
+        }), 
+    total: PropTypes.number, 
+    positive: PropTypes.number
 }

@@ -15,6 +15,7 @@ text-transform: capitalize;
 background-color: transparent;
 border: solid 1px silver;
 border-radius: 5px;
+transition: all .07s ease-out;
 &:hover {
     background-color: silver;
   }
